@@ -184,7 +184,7 @@ AerialVision dependencies:
 - python-pmw
 - python-ply
 - python-numpy
-- libpng12-dev -> libpng12-dev
+- libpng12-dev -> libpng-dev
 - python-matplotlib -> matplotlib(pip)
 
 We used gcc/g++ version 4.5.1, bison version 2.4.1, and flex version 2.5.35.
