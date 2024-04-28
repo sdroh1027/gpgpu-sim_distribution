@@ -219,7 +219,7 @@ your PATH. You probably want to modify your .bashrc file to incude the
 following (this assumes the CUDA Toolkit was installed in /usr/local/cuda):
 
 	export CUDA_INSTALL_PATH=/usr/local/cuda  # add to ~/.bashrc
-	export PATH=$CUDA_INSTALL_PATH/bin  # just for make
+	export PATH=$CUDA_INSTALL_PATH/bin  # not required
 
 If running applications which use cuDNN or cuBLAS:
 
