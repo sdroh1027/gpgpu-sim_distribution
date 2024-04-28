@@ -129,7 +129,7 @@ to build GPGPU-Sim all you need to do is add the following line to your
   export CUDA_INSTALL_PATH=/usr/local/cuda
 ```
 
-then type
+then type (clone한 폴더에서)
 
 ```
   bash
@@ -184,8 +184,8 @@ AerialVision dependencies:
 - python-pmw
 - python-ply
 - python-numpy
-- libpng12-dev
-- python-matplotlib
+- libpng12-dev -> libpng-dev
+- python-matplotlib -> matplotlib(pip)
 
 We used gcc/g++ version 4.5.1, bison version 2.4.1, and flex version 2.5.35.
 
@@ -202,11 +202,13 @@ GPGPU-Sim documentation dependencies:
 
 AerialVision dependencies:
 
-	sudo apt-get install python-pmw python-ply python-numpy libpng12-dev python-matplotlib
+	sudo apt-get install python-pmw python-ply python-numpy libpng12-dev
+ 
+	pip install matplotlib
 
 CUDA SDK dependencies:
 
-	sudo apt-get install libxi-dev libxmu-dev libglut3-dev
+	sudo apt-get install libxi-dev libxmu-dev freeglut3-dev
 
 If you are running applications which use NVIDIA libraries such as cuDNN and 
 cuBLAS, install them too.
@@ -216,8 +218,8 @@ the CUDA Toolkit (e.g., /usr/local/cuda) and that \$CUDA_INSTALL_PATH/bin is in
 your PATH. You probably want to modify your .bashrc file to incude the
 following (this assumes the CUDA Toolkit was installed in /usr/local/cuda):
 
-	export CUDA_INSTALL_PATH=/usr/local/cuda
-	export PATH=$CUDA_INSTALL_PATH/bin
+	export CUDA_INSTALL_PATH=/usr/local/cuda  # add to ~/.bashrc
+	export PATH=$CUDA_INSTALL_PATH/bin  # not required
 
 If running applications which use cuDNN or cuBLAS:
 
