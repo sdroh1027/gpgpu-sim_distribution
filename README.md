@@ -129,7 +129,7 @@ to build GPGPU-Sim all you need to do is add the following line to your
   export CUDA_INSTALL_PATH=/usr/local/cuda
 ```
 
-then type
+then type (clone한 폴더에서)
 
 ```
   bash
@@ -184,8 +184,8 @@ AerialVision dependencies:
 - python-pmw
 - python-ply
 - python-numpy
-- libpng12-dev
-- python-matplotlib
+- libpng12-dev -> libpng12-dev
+- python-matplotlib -> matplotlib(pip)
 
 We used gcc/g++ version 4.5.1, bison version 2.4.1, and flex version 2.5.35.
 
@@ -203,6 +203,8 @@ GPGPU-Sim documentation dependencies:
 AerialVision dependencies:
 
 	sudo apt-get install python-pmw python-ply python-numpy libpng12-dev python-matplotlib
+ 
+	pip install matplotlib
 
 CUDA SDK dependencies:
 
