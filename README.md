@@ -202,13 +202,13 @@ GPGPU-Sim documentation dependencies:
 
 AerialVision dependencies:
 
-	sudo apt-get install python-pmw python-ply python-numpy libpng12-dev python-matplotlib
+	sudo apt-get install python-pmw python-ply python-numpy libpng12-dev
  
 	pip install matplotlib
 
 CUDA SDK dependencies:
 
-	sudo apt-get install libxi-dev libxmu-dev libglut3-dev
+	sudo apt-get install libxi-dev libxmu-dev freeglut3-dev
 
 If you are running applications which use NVIDIA libraries such as cuDNN and 
 cuBLAS, install them too.
