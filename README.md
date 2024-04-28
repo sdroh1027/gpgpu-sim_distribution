@@ -218,8 +218,8 @@ the CUDA Toolkit (e.g., /usr/local/cuda) and that \$CUDA_INSTALL_PATH/bin is in
 your PATH. You probably want to modify your .bashrc file to incude the
 following (this assumes the CUDA Toolkit was installed in /usr/local/cuda):
 
-	export CUDA_INSTALL_PATH=/usr/local/cuda
-	export PATH=$CUDA_INSTALL_PATH/bin
+	export CUDA_INSTALL_PATH=/usr/local/cuda  # add to ~/.bashrc
+	export PATH=$CUDA_INSTALL_PATH/bin  # just for make
 
 If running applications which use cuDNN or cuBLAS:
 
